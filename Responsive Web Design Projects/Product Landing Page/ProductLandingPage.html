@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Third Project</title>
+<head>
+<style>
+body{
+  font-family:serif;
+  color:black;
+
+}
+body::after{
+  content: "";
+  background-image:url(https://cutewallpaper.org/21/tumblr-plain-backgrounds/Plain-Light-Backgrounds-Wallpapers.png) ;
+  background-repeat:repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;   
+}
+header{
+    position:fixed;
+    width:100%;
+}
+nav{
+  font-size:24px;
+}
+.nav-bar{
+    max-width: 100%;  
+    height: 60px; 
+    background-image:url(https://cutewallpaper.org/21/tumblr-plain-backgrounds/Plain-Light-Backgrounds-Wallpapers.png) ;
+    text-align:center;
+}
+.nav-bar ul img{
+  float:left;
+}
+.nav-bar ul{
+  float:right;
+  padding:0px 5px 0 5px;
+  margin:0px;
+  text-align:center;
+  display:inline-block;
+  vertical-align:top;
+}
+.nav-bar li{
+  list-style-type:none;
+  padding:0px;
+  height:30px;
+  margin-top:20px;
+  margin-bottom:10px;
+  display:inline;
+}
+.nav-bar li a{
+  color:black;
+  font-size:20px;
+  text-decoration:none;
+  line-height:60px;
+  padding:15px 10px;
+  opacity:0.8;
+}
+.nav-bar li a:hover{
+  background-color: #e6e3dc;
+}
+.logo{
+  display:inline-block;
+  vertical-align: top;
+  width: auto;
+  height: 30px;
+  margin-right: 15px;
+  margin-top: 15px;    
+  float:left;
+}
+.mainsize{
+  font-size:28px;
+  font-style:bold;
+}
+.whole{
+  max-width:80%;
+  margin: auto;
+  padding:20px;
+  text-align:center;
+}
+input[type=email]{
+  width:40%;
+  padding:12px 12px;
+  margin: 20px auto 20px auto;
+  border-radius: 4px;
+  cursor: pointer;
+  display:block;
+}
+input[type=submit]{
+  width: 30%;
+  text-align:center;
+  background-color:#eaed1a;
+  border: none;
+  color: black;
+  padding: 10px 32px;
+  font-size:16px;
+  font-style:bold;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight:bold;
+}
+.grid-container{
+  display:grid;
+  grid-template-columns:20% 80%;
+  grid-gap:10px;
+  padding:10px;
+}
+.grid-container>div{
+  text-align:left;
+  padding:20px 5px;
+}
+.grid-container div img{
+  max-width:30%;
+  height:auto;
+  padding:0 auto 0 auto;
+}
+.grid-container div h2{
+  color:black;
+}
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    margin-bottom: 1rem;
+  }
+}
+.flex-container{
+  display:flex;
+  flex-direction:columnn;
+  justify-content:space-between;
+  max-width:100%;
+}
+.flex-container-div{
+  max-width:30%;
+  height:auto;
+  margin:10px 10px 10px 10px;
+  align-item:center;
+  text-align:center;
+  line-height:30px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.fc-d-div{
+  background-color:#d7d9d4;
+  width:100%;
+  padding: 10px 0;
+}
+input[type=submit1]{
+  align-item:center;
+  text-align:center;
+  width: 40%;
+  background-color:#eaed1a;
+  border: none;
+  color: black;
+  padding: 10px 32px;
+  font-size:16px;
+  font-style:bold;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 4px 2px 20px;
+  cursor: pointer;
+  font-weight:bold;
+}
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+<br><br>    
+<header id="header" align="top">
+  <nav id="nav-bar" class="nav-bar">
+    <img class="logo" id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png">
+    <ul>
+      <li><a href="#features" class="nav-link">Features</a></li>
+      <li><a href="#howitworks" class="nav-link">How It Works</a></li>
+      <li><a href="#pricing" class="nav-link">Pricing</a></li>
+    <ul>
+  </nav>
+</header>
+<div class="whole">
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <label class="mainsize" for="email"><h3>Handcrafted, home-made masterpieces</h3></label>
+    <input id="email" type="email"  placeholder="Enter your email" name="email" pattern=".+@gmail.com" size="30" required>
+    <input type="submit" id="submit" value="Get Started!"></input><br>
+  </form>
+  <section id="features">
+    <div class="grid-container">
+      <div><img src="https://img.icons8.com/pastel-glyph/2x/search--v1.png"></div>
+      <div>
+        <h2>Premium Materials</h2>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+      </div>
+      <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Windows_Settings_app_icon.png/480px-Windows_Settings_app_icon.png"></div>
+      <div>
+        <h2>Fast Shipping</h2>
+        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      </div>
+      <div><img src="https://img.icons8.com/ios/452/safari.png"></div>
+      <div>
+        <h2>Quality Assurance</h2>
+        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>      
+      </div>
+    </div>
+  </section>
+  <br>
+  <section id="howitworks">
+    <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allowfullscreen>    
+    </iframe>
+  </section>
+   <br><br>
+  <section id="pricing">
+    <div class="flex-container">
+      <div class="flex-container-div">
+        <div class="fc-d-div"><h3>TENOR TROMBONE</h3></div>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+        <form>
+          <input type="submit1" id="submit1" value="SELECT">
+        </form>
+      </div>
+      <div class="flex-container-div">
+        <div class="fc-d-div"><h3>BASS TROMBONE</h3></div>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+        <form>
+          <input type="submit1" id="submit1" value="SELECT">
+        </form>
+      </div>
+      <div class="flex-container-div">
+        <div class="fc-d-div"><h3>VALVE TROMBONE</h3></div>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum.</p>
+        <form>
+          <input type="submit1" id="submit1" value="SELECT">
+        </form>
+      </div>
+    </div> 
+  </section>
+</div>
+
+</body>
+
+</html>

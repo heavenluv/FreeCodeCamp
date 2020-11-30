@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Third Project</title>
+<head>
+<style>
+body{
+  font-family:serif;
+  font-size:16px;
+}
+body::after{
+  background-image:url(https://static.veer.com/veer/static/resources/keyword/2019-10-29/d48dc33c36984db18c928446c37f8f9c.jpg);  
+  content: "";
+  background-repeat:repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;   
+}
+p{
+  padding-left:15px;
+  padding-right:10px;
+}
+article{
+  padding-left:15px;
+  padding-right:10px;
+}
+code{
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#d9d7d7;
+  padding:15px 20px 3px 20px;
+}
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  margin: 5px;
+  border-radius: 5px;
+}
+section ul{
+  padding:5px 10px 5px 60px;
+}
+#navbar{
+  position:fixed;
+}
+nav header h2{
+  font-size:1.4em;
+}
+nav ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  width:20%;
+  background-image:url(https://lh3.googleusercontent.com/proxy/QoPPeGMoWNgTBPBj0OUQL4KdyOQWxpI2huNw6Hsjexrx5EtAzOANU8FLYQ5gHIYPGzRLsqQfwGcy6xmL7EiI8QXr6Ve65OsSyytyxQ8o);
+  opacity:0.8;
+  background-repeat:repeat;
+  position: fixed;
+  height: calc(100% - 100px);
+  line-height:2.2;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+nav li{
+  list-style: none;
+  position: relative;
+}
+nav li a{
+  display:block;
+  color: #000;
+  padding: 8px 16px 8px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+nav li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+nav li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+nav ul p{
+  font-weight:bold;
+  font-size:22px;
+}
+main{
+    padding: 10px 0 10px 0;
+}
+section{
+    padding: 10px 0 10px 0;
+}
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: calc(100% - 100px);
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+</style>
